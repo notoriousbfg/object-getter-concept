@@ -1,6 +1,6 @@
 import { createStore } from 'vuex'
 import axios from 'axios'
-import Person from '../modules/Person'
+import PersonCollection from '../modules/PersonCollection'
 
 export default createStore({
 	state: {
@@ -21,8 +21,8 @@ export default createStore({
 
 	},
 	getters: {
-		peopleObjects (state) {
-			return state.people.map(person => new Person(person))
+		personCollection (state) {
+			return new PersonCollection(state.people)
 		}
 	}
 })

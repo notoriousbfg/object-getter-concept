@@ -5,11 +5,7 @@ export default class Person {
         this.age = person.age
     }
 
-    getName () {
+    fullName () {
         return `${this.firstName} ${this.lastName}`
-    }
-
-    getAge () {
-        return this.age
     }
 }

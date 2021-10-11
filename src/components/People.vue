@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<p v-for="(person, index) in people" :key="index">{{ person.getName() }}: {{ person.getAge() }}</p>
+		<p v-for="(person, index) in people" :key="index">{{ person.fullName() }}: {{ person.age }}</p>
 	</div>
 </template>
 
@@ -9,7 +9,7 @@ export default {
 	name: 'People',
 	computed: {
 		people () {
-			return this.$store.getters.peopleObjects
+			return this.$store.getters.personCollection.people()
 		}
 	},
 	created () {
