@@ -1,0 +1,16 @@
+{
+    "people": [
+        {
+            "firstName": "Tim",
+            "lastName": "White",
+            "age": 27,
+            "hometown": "Bournemouth"
+        },
+        {
+            "firstName": "Christian",
+            "lastName": "Bale",
+            "age": 47,
+            "hometown": "Haverfordwest"
+        }
+    ]
+}
